@@ -42,7 +42,7 @@ jobs:
         sudo mv migrate.linux-amd64 /usr/bin/migrate
         which migrate
 
-    - name: Run Migrations
+    - name: Run migrations
       run: make migrateup
 
     - name: Check out code into the Go Module Directory
