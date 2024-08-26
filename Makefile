@@ -11,7 +11,7 @@ dropdb:
 migrateup:
 	migrate -path db/migration -database "postgresql://root:hide1337@localhost:5432/simple_bank?sslmode=disable" -verbose up
 
-migratedown:
+migratedown:s
 	migrate -path db/migration -database "postgresql://root:hide1337@localhost:5432/simple_bank?sslmode=disable" -verbose down
 
 sqlc:
