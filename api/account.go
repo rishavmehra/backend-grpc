@@ -54,6 +54,8 @@ func (server *Server) getAccount(ctx *gin.Context) {
 		ctx.JSON(http.StatusInternalServerError, errorResponse(err))
 		return
 	}
+
+	// account = db.Account{}
 	ctx.JSON(http.StatusOK, account)
 }
 
