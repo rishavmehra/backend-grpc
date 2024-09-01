@@ -10,7 +10,7 @@ import (
 
 type CreateAccountRequest struct {
 	Owner    string `json:"owner" binding:"required"`
-	Currency string `json:"currency" binding:"required,oneof=USD EUR"` // dont use space in front of "oneof"
+	Currency string `json:"currency" binding:"required,currency"` // dont use space in front of "oneof"
 }
 
 func (server *Server) createAccount(ctx *gin.Context) {
