@@ -20,7 +20,7 @@
 #           env:
 #             POSTGRES_USER: root
 #             POSTGRES_PASSWORD: hide1337
-#             POSRGRES_DB: simple_bank_new
+#             POSRGRES_DB: grpc_staging
 #           options: >-
 #             --health-cmd pg_isready
 #             --health-interval 10s
@@ -73,7 +73,7 @@ jobs:
         env:
           POSTGRES_USER: root
           POSTGRES_PASSWORD: hide1337
-          POSTGRES_DB: simple_bank_new
+          POSTGRES_DB: grpc_staging
         ports:
           - 5432:5432
         options: >-

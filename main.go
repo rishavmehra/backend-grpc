@@ -13,7 +13,7 @@ import (
 
 // const (
 // 	dbDriver      = "postgres"
-// 	dbSource      = "postgresql://root:hide1337@localhost:5432/simple_bank_new?sslmode=disable"
+// 	dbSource      = "postgresql://root:hide1337@localhost:5432/grpc_staging?sslmode=disable"
 // 	serverAddress = "0.0.0.0:8080"
 // )
 
