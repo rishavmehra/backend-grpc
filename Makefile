@@ -2,7 +2,7 @@ DB_URL=postgresql://root:hide1337@localhost:5432/grpc_staging?sslmode=disable
 
 
 postgres_container:
-	docker run --name postgres12 -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=hide1337 -d postgres:12-alpine
+	docker run --name postgres12 --network bank-network -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=hide1337 -d postgres:12-alpine
 
 createDB:
 	docker exec -it postgres12 createdb --username=root --owner=root grpc_staging
