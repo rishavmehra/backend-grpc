@@ -1,0 +1,19 @@
+
+
+
+syntax = "proto3";
+
+package pb;
+
+import "login.proto";
+
+option go_package = "github.com/rishavmehra/backend-grpc/pd";
+
+message LoginUserRequest {
+    string username = 1;
+    string password = 2;
+}
+
+message LoginUserResponse {
+    Login login = 1;
+}
